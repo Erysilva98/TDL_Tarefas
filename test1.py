@@ -7,7 +7,9 @@ layout = [
     [sg.B("ADICIONAR",size=(10,1),button_color="green"),sg.B("REMOVER",key="-DEL-",button_color="red"),sg.Exit("FECHAR",size=(10,1))],
 ]
 
-janela = sg.Window('TDL - GERENCIE SUAS TAREFAS', layout)
+#,sg.B("REMOVER",key="-DEL-"),sg.EXIT()
+
+janela = sg.Window('TDL - GERENCIE SUAS TAREFAS',layout)
 tarefa = []
 contador = 1
 
@@ -21,8 +23,9 @@ while True:
     elif evento == "ADICIONAR":
         data = janela["-DIA-"].get().split()[0]
         tarefa = [[contador,data,valor["-TAR-"]]]
-        tabela += 1
+        tarefa += tarefa
         janela["-TABELA-"].update(tarefa)
+        janela["-TAR-"].update('')
         contador += 1
 
     print(evento,valor)
