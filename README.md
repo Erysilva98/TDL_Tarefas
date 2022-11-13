@@ -22,9 +22,11 @@
 
     *Acesse a Pasta do Projeto pelo CMD
 
+    - Sistema Windows:
+
     - Ativando ENV:
 
-        .\tdl\Scripts\activate
+        .\winTdl\Scripts\activate
 
     - Instalando Dependências
 
@@ -33,6 +35,28 @@
         py -m pip install --upgrade requests
 
         py -m pip install -r requirements.txt
+    
+    - Iniciando o Projeto TDL
+
+        python main.py
+
+    - Desativando ENV:
+
+        *Use apenas quando desejar encerrar o Projeto
+
+        deactivate
+
+    - # 
+
+        - Sistema Linux/MacOs:
+    
+    - Ativando ENV:
+
+        source tdl/bin/activate
+
+    - Instalando Dependências
+
+        
     
     - Iniciando o Projeto TDL
 
