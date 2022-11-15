@@ -10,7 +10,7 @@
 #
 2. Instalando a virtual Env
 
-    *Use o CMD
+    *Use o CMD ou Terminal
 
     https://packaging.python.org/pt_BR/latest/guides/installing-using-pip-and-virtual-environments/
 
@@ -18,11 +18,11 @@
 
     py -m pip install --user virtualenv
 #
-3. Ativando ambiente virtual 
+# Ativando ambiente virtual 
 
-    *Acesse a Pasta do Projeto pelo CMD
+3. Sistema Windows: 
 
-    - Sistema Windows:
+    > Acesse a Pasta do Projeto pelo CMD
 
     - Ativando ENV:
 
@@ -46,9 +46,11 @@
 
         deactivate
 
-    - # 
+# 
 
-        - Sistema Linux/MacOs:
+4. Sistema Linux/MacOs:
+
+    > Acesse a Pasta do Projeto pelo Terminal 
     
     - Ativando ENV:
 
@@ -56,8 +58,12 @@
 
     - Instalando Dependências
 
+        python -m pip install requests
+
+        python -m pip install --upgrade requests
+
+        python -m pip install -r requirements.txt
         
-    
     - Iniciando o Projeto TDL
 
         python main.py
