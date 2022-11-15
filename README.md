@@ -8,7 +8,7 @@
 
     git clone https://github.com/Erysilva98/TDL_Tarefas.git
 #
-2. Instalando a virtual Env
+2. Instalando a Virtual Env
 
     *Use o CMD ou Terminal
 

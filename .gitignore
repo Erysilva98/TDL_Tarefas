@@ -1,0 +1,9 @@
+
+
+# Ignorar o Ambiente virtual para Linux/MacOs
+
+tdl/
+
+# Ignorar o Ambiente Virtual para Windows
+
+winTdl/
