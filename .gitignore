@@ -7,3 +7,7 @@ tdl/
 # Ignorar o Ambiente Virtual para Windows
 
 winTdl/
+
+# Ignorar a Pasta da Documentação
+
+Doc/
