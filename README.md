@@ -18,7 +18,7 @@
 # 
     - Ativando o Ambiente virtual
 
-        .\winTdl\Scripts\activate
+        \winTdl\Scripts\activate
 
     - Executando Projeto
 
