@@ -66,7 +66,7 @@
 
     py -m pip install --user virtualenv
     py -m venv winTdl
-    .\winTdl\Scripts\activate
+    winTdl\Scripts\activate
 
 > Instalando Dependências
 
