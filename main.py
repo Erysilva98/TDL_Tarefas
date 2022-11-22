@@ -113,8 +113,6 @@ while True:
         else:
             pass
     
-    else:
-        pass
             
 
     
