@@ -1,5 +1,4 @@
-# TDL_Tarefas
->Todo List - Gerêncie suas Tarefas
+# TDL - AGENDA DE TAREFAS
 
 #
 
