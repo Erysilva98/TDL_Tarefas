@@ -6,6 +6,7 @@ global contador
 lTarefas = []
 contador = 1
 pos = 0
+click = 0
 
 layout = [
     [sg.CalendarButton("ENTREGAR ", size=(10,1)),sg.T("-- -- -- --",key="-DATE-")],
@@ -88,20 +89,30 @@ while True:
         break
 
     elif evento == "-ADD-":
-        add(valor,lTarefas,contador)
-        contador += 1
-
-    elif evento == "-EDT-":
-        if valor["-TABLE-"]:
-            indice = valor["-TABLE-"][0]
-            edIndice = lTarefas[indice][0]
-            pos = edIndice
-            edt(valor,lTarefas)
+        #Verificar se os campus foram preenchidos
+        if valor["-USER-"] and valor["-PROJ-"] and valor["-TASK-"]:
+            add(valor,lTarefas,contador)
+            contador += 1
         else:
             pass
 
+    elif evento == "-EDT-":
+        #Contabilizar o número de Clicks
+        click += 1
+        if valor["-TABLE-"] and click == 1 or valor["-TABLE-"] and click == 2:
+            indice = valor["-TABLE-"][0]
+            pos = lTarefas[indice][0]
+            edt(valor,lTarefas)
+            click += 1
+        else:
+            click = 0
+
     elif evento == "-SAVE-":
-        save(valor,lTarefas,pos)
+        #Verificar se os campus foram preenchidos
+        if valor["-USER-"] and valor["-PROJ-"] and valor["-TASK-"]:
+            save(valor,lTarefas,pos)
+        else:
+            pass
 
     elif evento == "-ORD-": 
         ordenar(lTarefas)
@@ -112,7 +123,4 @@ while True:
             deleta(valor,lTarefas)
         else:
             pass
-    
-            
-
     
