@@ -56,4 +56,5 @@
     1 Organizando o Quadro do GitHub
     2 Arquivo de Documentação do Projeto TDL Tarefas
     3 Criando as Weekle Scrum com base nas Anotações o Trello
-    4 .. 24/11 Apresentação do Processo de Desenvolvimento do Software
+    4 .. 24/11 Apresentação do Processo de Desenvolvimento do Software *Não Concluída
+    5 Teste e correção de preenchimento das informações. Atualização as 10h20m
