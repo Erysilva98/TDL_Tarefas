@@ -80,6 +80,7 @@
     py -m pip install --upgrade requests
     py -m pip freeze
     py -m pip install pysimplegui
+    py -m pip install --upgrade pip
     py -m pip freeze
     
 > Iniciando o Projeto TDL
@@ -116,6 +117,7 @@
     python3 -m pip install --upgrade requests
     python3 -m pip freeze
     python3 -m pip install pysimplegui
+    python3 -m pip install --upgrade pip
     python3 -m pip freeze
     
 > Iniciando o Projeto TDL
